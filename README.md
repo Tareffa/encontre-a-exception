@@ -1,4 +1,4 @@
-# LegacyCommunicationService - Análise de Bug (inspirado em fatos reais)
+# LegacyCommunicationService - Análise de Bug
 
 ## 📋 Contexto do Problema
 
