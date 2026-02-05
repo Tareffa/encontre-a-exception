@@ -30,9 +30,7 @@ public class LegacyCommunicationService {
         if (!token.contains(";")) {
             return token.trim();
         }
-
         String[] parts = token.split(";");
-
         // Formato: [celular];[id_campanha];[metadata];meta
         return validateAndClean(parts[POS_CELULAR]);
     }
@@ -47,7 +45,6 @@ public class LegacyCommunicationService {
 
     public List<String> processBatch(List<String> rawTokens) {
         if (rawTokens == null) return Collections.emptyList(); // Proteção contra NPE
-
         return rawTokens.stream()
                 .map(t -> {
                     try {
